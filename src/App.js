@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>¡Bienvenidos a la Cafetería Galletas!</h1>
+        <p>Estamos encantados de tenerte aquí. Disfruta de nuestras deliciosas galletas.</p>
       </header>
+      <main>
+        <h2>Nuestras galletas más populares:</h2>
+        <ul>
+          <li>Galletas de Chocolate</li>
+          <li>Galletas de Avena</li>
+          <li>Galletas de Vainilla</li>
+        </ul>
+      </main>
     </div>
   );
 }
