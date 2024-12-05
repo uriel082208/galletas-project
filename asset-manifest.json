@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/galletas-project/static/css/main.f855e6bc.css",
+    "main.js": "/galletas-project/static/js/main.02cf6b0f.js",
+    "static/js/453.b482f163.chunk.js": "/galletas-project/static/js/453.b482f163.chunk.js",
+    "index.html": "/galletas-project/index.html",
+    "main.f855e6bc.css.map": "/galletas-project/static/css/main.f855e6bc.css.map",
+    "main.02cf6b0f.js.map": "/galletas-project/static/js/main.02cf6b0f.js.map",
+    "453.b482f163.chunk.js.map": "/galletas-project/static/js/453.b482f163.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.02cf6b0f.js"
+  ]
+}
