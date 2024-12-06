@@ -1,0 +1,133 @@
+.product-card {
+  border: 1px solid #e0e0e0; /* Borde suave */
+  padding: 20px;
+  text-align: center;
+  width: 270px;
+  margin: 15px auto;
+  background-color: #fdf6e3; /* Color pastel */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.product-name {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #8b5e34; /* Color marrón */
+}
+
+/* Estilo general para las imágenes de los productos */
+.product-image {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  max-width: 250px; /* Límite de tamaño máximo de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 10px; /* Bordes redondeados */
+  object-fit: cover; /* Asegura que la imagen se recorte bien si es necesario */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+.product-sizes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.size-button {
+  padding: 8px 12px;
+  margin: 0;
+  background-color: #f2d68a; /* Pastel */
+  border: 1px solid #e0c08b; /* Borde claro */
+  border-radius: 20px; /* Forma ovalada */
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #8b5e34; /* Marrón */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.size-button:hover {
+  background-color: #f39c12; /* Naranja vibrante */
+  transform: scale(1.1); /* Efecto de agrandamiento */
+  color: white;
+}
+
+.size-button.active-size {
+  background-color: #8b5e34; /* Marrón más oscuro */
+  color: white;
+}
+
+.product-order {
+  margin-top: 20px;
+}
+
+.order-button {
+  background-color: #8b5e34; /* Marrón */
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px; /* Botón redondeado */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #f39c12;
+  transform: scale(1.1);
+}
+
+.order-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Barra de éxito */
+.success-bar {
+  background-color: #4caf50; /* Verde */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  display: none; /* Oculta por defecto */
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Estilo del formulario de pago */
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.payment-option {
+  margin-bottom: 10px;
+}
+
+.payment-option input {
+  margin-right: 10px;
+}
+
+.payment-form button {
+  background-color: #8b5e34;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-form button:hover {
+  background-color: #f39c12;
+}

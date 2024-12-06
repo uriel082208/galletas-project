@@ -1,0 +1,65 @@
+/* Estilo general para la página de sucursales */
+.branches {
+  font-family: 'Arial', sans-serif;
+  background-image: url('../images/fondo2.png'); /* Imagen de fondo para toda la página */
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-repeat: no-repeat; /* No repetirá la imagen */
+  background-position: center; /* Centra la imagen */
+  min-height: 100vh; /* Asegura que la altura mínima cubra toda la pantalla */
+  color: #ccc; /* Color de texto general blanco */
+  padding: 20px;
+}
+
+.branches h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #6f4f28;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para cada sucursal */
+.branch {
+  display: flex;
+  margin-bottom: 40px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: rgba(249, 240, 225, 0.9); /* Fondo suave y con opacidad */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.branch-image {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.branch-details {
+  flex: 1;
+}
+
+.branch-details h2 {
+  font-size: 2rem; /* Aumento de tamaño */
+  margin-bottom: 10px;
+  color: #5c4d3f; /* Color café oscuro */
+}
+
+.branch-details p {
+  font-size: 1.2rem; /* Aumento de tamaño */
+  margin: 5px 0;
+  color: #6e5c49; /* Texto café claro */
+}
+
+.branch-details p strong {
+  font-weight: bold;
+}
+
+/* Responsive: Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+  .branches h1 {
+    font-size: 2.5rem;
+  } 
+}

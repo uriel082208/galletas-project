@@ -1,0 +1,134 @@
+/* Estilo para la opción de pago */
+.payment-method {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.payment-method label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.payment-method input {
+  margin-right: 10px;
+}
+
+/* Estilo para el formulario de tarjeta */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Botón de confirmación de pago */
+.btn-confirm-payment {
+  background-color: #00bfff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-confirm-payment:hover {
+  background-color: #009ac1;
+}
+
+/* Estilo para la confirmación del pedido */
+.order-confirmation {
+  background-color: #eaffea;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 1px solid #00bfff;
+}
+
+.order-confirmation h2 {
+  color: #009ac1;
+}
+
+.order-confirmation p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.checkout {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.checkout-summary {
+  margin-bottom: 20px;
+}
+
+.checkout-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.checkout-item-details h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.checkout-total h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.btn-confirm-payment {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-confirm-payment:hover {
+  background-color: #45a049;
+}
+
+.order-confirmation {
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.payment-method label {
+  margin-right: 15px;
+}
+
+.payment-method input[type="radio"] {
+  margin-right: 5px;
+}
+
+form .form-group {
+  margin-bottom: 15px;
+}
+
+form .form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}

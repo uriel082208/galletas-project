@@ -1,0 +1,145 @@
+/* Estilo para la página principal */
+.home {
+  font-family: 'Arial', sans-serif;
+  background-image: url('../images/fondo2.png'); /* Imagen de fondo en toda la página */
+  background-size: cover; /* Asegura que la imagen cubra toda el área */
+  background-repeat: no-repeat; /* No repetirá la imagen */
+  background-position: center; /* Centra la imagen */
+  min-height: 100vh; /* Asegura que la altura mínima cubra toda la pantalla */
+  color: #fff; /* Color de texto general blanco */
+}
+
+/* Estilo para la sección del héroe con la imagen de fondo */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Ajusta la altura según sea necesario */
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el área */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Color blanco para el texto */
+  font-size: 4rem; /* Aumento del tamaño del texto */
+  font-weight: bold;
+}
+
+/* Estilo para las secciones (introducción, comentarios, biografía) */
+.section-title h2 {
+  font-size: 3rem; /* Títulos grandes */
+  text-align: center;
+  color: #5c4d3f; /* Color café oscuro */
+  margin-bottom: 20px;
+}
+
+.section-content p {
+  font-size: 1.8rem; /* Aumento del tamaño del texto */
+  color: #6e5c49; /* Texto café claro */
+  line-height: 1.8;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(249, 240, 225, 0.9); /* Fondo claro con opacidad */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para la biografía del propietario */
+.biography {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: rgba(249, 240, 225, 0.9); /* Fondo claro con opacidad */
+  margin-block-end: -50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.bio-text {
+  flex: 1;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.bio-text h2 {
+  color: #5c4d3f; /* Título café oscuro */
+  font-size: 2.5rem; /* Aumento de tamaño */
+}
+
+.bio-text p {
+  color: #6e5c49; /* Texto café claro */
+  font-size: 1.5rem; /* Aumento de tamaño */
+  line-height: 1.8;
+}
+
+.owner-photo {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.owner-image {
+  height: 250px; /* Aumento de tamaño */
+  width: 250px;
+  border-radius: 50%; /* Redondear la imagen */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Fondo con imagen en el menú */
+.menu {
+  padding: 20px;
+  margin-block-end: -50px;
+  min-height: 100vh; /* Asegura que la altura mínima cubra toda la pantalla */
+  background-color: rgba(245, 245, 245, 0.9); /* Fondo claro con opacidad */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive: Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-content p,
+  .biography p {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .biography {
+    flex-direction: column; /* Para pantallas pequeñas, la imagen y el texto se apilan */
+    align-items: center;
+  }
+
+  .owner-photo {
+    margin-top: 20px;
+  }
+
+  .bio-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .owner-image {
+    height: 200px; /* Ajuste del tamaño de la imagen */
+    width: 200px;
+  }
+}

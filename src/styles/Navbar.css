@@ -1,0 +1,65 @@
+/* Barra de navegación translúcida */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(210, 180, 140, 0.8); /* Café pastel con opacidad */
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  height: 60px; /* Altura fija de la barra */
+  backdrop-filter: blur(8px); /* Efecto de desenfoque */
+}
+
+/* Ajuste para la sección izquierda de la navbar */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Ajuste del logo para bajarlo */
+.logo {
+  width: 200px; /* Tamaño del logo */
+  height: auto;
+  margin-right: 15px;
+  margin-top: 70px; /* Desplaza el logo hacia abajo */
+}
+
+
+/* Ajustes para la sección derecha */
+.navbar-right {
+  display: flex;
+  gap: 20px;
+  margin-right: 50px; /* Ajusta el valor para mayor desplazamiento */
+}
+
+/* Botones de navegación en forma de óvalo */
+.navbar-link {
+  color: #3a3a3a; /* Color de texto inicial */
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 8px 15px; /* Espaciado interno para dar forma de óvalo */
+  background-color: #ffffff; /* Fondo blanco */
+  border: 2px solid #ffffff; /* Borde blanco */
+  border-radius: 25px; /* Forma de óvalo */
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  display: inline-block; /* Asegura que mantenga la forma */
+  text-align: center;
+}
+
+/* Hover en los botones */
+.navbar-link:hover {
+  background-color: #d2b48c56; /* Color dorado al pasar el cursor */
+  color: #ffffff; /* Texto blanco al pasar el cursor */
+  transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+/* Ajuste para que el contenido esté debajo de la barra */
+body {
+  margin: 0; /* Elimina márgenes globales */
+  padding-top: 60px; /* Espaciado equivalente a la altura de la navbar */
+}

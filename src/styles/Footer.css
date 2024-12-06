@@ -1,0 +1,67 @@
+/* Estilos para el pie de página */
+.footer {
+  background-color: #8a8a8a; /* Gris pastel oscuro */
+  color: white;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  box-sizing: border-box;
+  margin-top: 50px; /* Espacio entre el contenido principal y el footer */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los elementos de izquierda a derecha */
+  width: 100%;
+  max-width: 1200px; /* Limita el ancho del contenido */
+  margin: 0 auto;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-left {
+  justify-content: flex-start; /* Alinea a la izquierda */
+}
+
+.footer-right {
+  justify-content: flex-end; /* Alinea a la derecha */
+}
+
+.footer-center {
+  justify-content: center; /* Alinea los enlaces en el centro */
+}
+
+.footer-left p,
+.footer-right p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-center a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-center a:hover {
+  text-decoration: underline;
+}
+
+/* Asegura que el footer siempre quede al final de la página */
+body, html {
+  height: 100%;
+  margin:0 ;
+}
+
+main {
+  min-height: calc(100vh - 120px); /* Resta la altura del header y footer */
+}
